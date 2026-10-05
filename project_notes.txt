@@ -1,0 +1,61 @@
+# Smart Parking Management System
+
+## Step 1: Problem Decomposition
+
+### Problem
+
+Managing parking slots manually is difficult because we need to track available slots, parked vehicles, entry times, and parking fees.
+
+### Solution
+
+We divide the parking problem into smaller tasks:
+
+1. Display available and occupied parking slots.
+2. Park a vehicle in an available slot.
+3. Remove a vehicle from the parking area.
+4. Calculate the parking fee based on parking duration.
+5. Display the parking summary.
+
+### Result
+
+Breaking the parking problem into smaller tasks makes the Smart Parking Management System easier to design, implement, test, and maintain.
+## Step 2: Abstraction
+
+### Explanation
+
+Abstraction is the process of showing important details and hiding unnecessary internal details.
+
+### Application in Smart Parking Management System
+
+In this project, the ParkingSystem class represents the parking area. It provides methods to view slots, park vehicles, remove vehicles, and display the parking summary.
+
+The user can perform these operations without knowing how the system internally stores vehicle details and calculates parking fees.
+
+### Result
+
+Abstraction makes the parking system easier to use and understand by organizing parking operations into simple methods.
+## Step 3: Algorithm Design
+
+### Explanation
+
+An algorithm is a step-by-step procedure used to solve a problem.
+
+### Vehicle Parking Algorithm
+
+1. Start the parking process.
+2. Accept the vehicle number from the user.
+3. Check whether the vehicle is already parked.
+4. Search for an available parking slot.
+5. If an empty slot is found, assign the vehicle to that slot.
+6. Store the vehicle's entry time.
+7. Display a parking confirmation message.
+8. If no slot is available, display "Parking is full."
+9. End the process.
+
+### Algorithm Used
+
+The system uses a sequential search to find the first available parking slot.
+
+### Result
+
+The algorithm helps the system park vehicles in available slots and display appropriate messages when parking is full.

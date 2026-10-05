@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🚗 Smart Parking Management System</h1>
+            <p>Interactive Parking Dashboard</p>
+        </header>
+
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Slots</h3>
+                <p id="totalSlots">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Occupied</h3>
+                <p id="occupiedSlots">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Available</h3>
+                <p id="availableSlots">0</p>
+            </div>
+
+        </section>
+
+        <section class="parking-section">
+
+            <h2>Parking Slots</h2>
+
+            <div id="parkingSlots" class="slots">
+                <!-- Slots will appear here -->
+            </div>
+
+        </section>
+
+        <section class="control-panel">
+
+            <h2>Park Vehicle</h2>
+
+            <input
+                type="text"
+                id="vehicleNumber"
+                placeholder="Enter vehicle number"
+            >
+
+            <button onclick="parkVehicle()">
+                🚗 Park Vehicle
+            </button>
+
+        </section>
+
+        <section class="control-panel">
+
+            <h2>Remove Vehicle</h2>
+
+            <input
+                type="number"
+                id="removeSlot"
+                placeholder="Enter slot number"
+                min="1"
+                max="5"
+            >
+
+            <button onclick="removeVehicle()">
+                🚪 Remove Vehicle
+            </button>
+
+        </section>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

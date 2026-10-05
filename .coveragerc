@@ -1,0 +1,4 @@
+[run]
+omit =
+    main_backup.py
+    */__init__.py
